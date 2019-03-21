@@ -1,0 +1,43 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+
+<ion-content padding class="fondo">
+  
+    <img src="../../assets/imgs/icon.png" class="botonCentra" style="width:150px" alt=""><br>
+
+  <ion-list >
+  <ion-item class="entradaArriba">
+      <ion-label> <ion-icon name="mail"></ion-icon></ion-label>
+      <ion-input clearInput type="text" placeholder="Correo Electrónico" [(ngModel)]="user"></ion-input>
+  </ion-item>
+
+  <ion-item class="entradaAbajo">
+      <ion-label> <ion-icon name="key"></ion-icon></ion-label>
+      <ion-input clearInput type="password" placeholder="Contraseña" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-button expand="block"   (click)="Iniciar_session(user, pass)" class="botonCentra" color="tertiary" >Iniciar sesión</ion-button>
+<ion-button expand="block"  clear class="botonCentra"color="light">¿Olvidaste tu contraseña?</ion-button>
+</ion-content>
+<ion-footer >
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="botonCentra" color="light">¿No tienes cuenta?</p>
+          </ion-col>
+          <ion-col>
+              <ion-button expand="block" ion-button clear color="tertiary"
+              (click)="Mov_Pag()" 
+              class="botonCentra" 
+              style="color:rgb(140, 190, 248)">Registrate aquí</ion-button>
+
+             
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
